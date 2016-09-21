@@ -73,6 +73,20 @@
       </div>
     </div>
 
-  
+      <script src="bower_components/jquery/dist/jquery.min.js"></script>  
+      <script>
+          var counter=0;
+        $(
+            
+            function(){
+                setInterval(
+                    function(){
+                        $(".repo-owner").html(counter);
+                        counter++;
+                    },1000
+                );
+            }
+        );
+      </script>
   </body>
 </html>
